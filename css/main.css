@@ -51,12 +51,12 @@ body {
   top: -20px;
 }
 
-.robot:hover > .robot-brain{
+.robot:hover > .robot-brain {
   z-index: 100;
   top: -50px;
 }
 
-.robot:hover > .robot-head-right{
+.robot:hover > .robot-head-right {
   right: -150px;
   top: -25px;
 }

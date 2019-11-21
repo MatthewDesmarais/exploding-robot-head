@@ -11,25 +11,57 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow: auto;
 }
 
 .banner {
   background-color: #2b3851;
+  height: 237px;
 }
 
 .robot {
   width: 320px;
+  align-content: center;
+  margin: 0 auto;
+  display: flex;
+  height: 237px;
 }
 
 .robot-body {
+  position: absolute;
   width: 320px;
+  top: 50px;
 }
 
 .robot-brain {
-  width: 46px;
+  position: relative;
+  top: -20px;
+  left: 137px;
 }
 
-.robot-head-right,
+.robot-head-right {
+  position: relative;
+  right: -113px;
+  top: -20px;
+}
+
 .robot-head-left {
-  width: 125px;
+  position: relative;
+  left: -137px;
+  top: -20px;
+}
+
+.robot:hover > .robot-brain{
+  z-index: 100;
+  top: -50px;
+}
+
+.robot:hover > .robot-head-right{
+  right: -150px;
+  top: -25px;
+}
+
+.robot:hover > .robot-head-left {
+  left: -172px;
+  top: -25px;
 }
